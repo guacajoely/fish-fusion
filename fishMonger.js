@@ -33,20 +33,17 @@ const mongerInventory = (chefBudget) => {
         arrayOfBoatFish[i].price < 7.50 &&
         arrayOfBoatFish[i].price < chefBudget){
 
-        //adjust amount of fish to 10 without altering 
+        //adjust amount of fish to 10 without altering origin array
         const newFish = arrayOfBoatFish[i]
         newFish.amount = 10
 
         //add fish that meet criteria to new array
         newArrayOfFish.push(newFish)
-        console.log(newFish)
         }
     }
 
     return newArrayOfFish
 }
-
-console.log(mongerInventory(5.00))
 
 
 //export mongerInventory function
